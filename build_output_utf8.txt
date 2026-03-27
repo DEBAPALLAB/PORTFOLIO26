@@ -1,0 +1,89 @@
+﻿  Γû▓ Next.js 14.2.3
+
+   Creating an optimized production build ...
+node.exe : <w> [webpack.ca
+che.PackFileCacheStrategy]
+ Skipped not serializable 
+cache item 'Compilation/mo
+dules|javascript/auto|C:\U
+sers\Dasad\OneDrive\Docume
+nts\codings\PORTFOLIO\node
+_modules\next\dist\build\w
+ebpack\loaders\next-flight
+-css-loader.js??ruleSet[1]
+.rules[14].oneOf[7].use[0]
+!C:\Users\Dasad\OneDrive\D
+ocuments\codings\PORTFOLIO
+\node_modules\next\dist\bu
+ild\webpack\loaders\css-lo
+ader\src\index.js??ruleSet
+[1].rules[14].oneOf[7].use
+[1]!C:\Users\Dasad\OneDriv
+e\Documents\codings\PORTFO
+LIO\node_modules\next\dist
+\build\webpack\loaders\pos
+tcss-loader\src\index.js??
+ruleSet[1].rules[14].oneOf
+[7].use[2]!C:\Users\Dasad\
+OneDrive\Documents\codings
+\PORTFOLIO\app\process\pag
+e.module.css|ssr': No 
+serializer registered for 
+CssSyntaxError
+At C:\Program 
+Files\nodejs\npx.ps1:29 
+char:3
++   & $NODE_EXE 
+$NPX_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (<  
+  w> [webpack.ca... Css   
+ SyntaxError:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+<w> while serializing webp
+ack/lib/cache/PackFileCach
+eStrategy.PackContentItems
+ -> 
+webpack/lib/NormalModule 
+-> webpack/lib/ModuleBuild
+Error -> CssSyntaxError
+Failed to compile.
+
+./app/process/page.module.
+css:206:1
+Syntax error: Selector ":g
+lobal(.react-flow__edge-pa
+th)" is not pure (pure 
+selectors must contain at 
+least one local class or 
+id)
+
+ [90m 204 | [39m
+ [90m 205 | [39m[90m/* 
+REACT FLOW OVERRIDES 
+*/[39m
+[1m[31m>[39m[22m[90m 
+206 | [39m[33m:[39m[36
+mglobal[39m[36m(.react-f
+low__edge-path)[39m 
+[33m{[39m
+ [90m     | 
+[39m[1m[31m^[39m[22m
+ [90m 207 | [39m  
+stroke[33m:[39m 
+[36mrgba[39m[36m(181, 
+137, 42, 
+0.2)[39m[33m;[39m
+ [90m 208 | [39m  
+stroke-width[33m:[39m 
+1.5[33m;[39m
+
+
+> Build failed because of 
+webpack errors

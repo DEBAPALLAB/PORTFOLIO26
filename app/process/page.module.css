@@ -1,0 +1,347 @@
+/* filename: app/process/page.module.css */
+.container {
+  min-height: 100vh;
+  background: var(--ink); /* Deep dark background */
+  color: var(--paper);
+  padding-top: 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  padding: 0 4rem;
+  margin-bottom: 4rem;
+  max-width: 1200px;
+}
+
+.eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.4em;
+  color: var(--gold);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  line-height: 0.9;
+  color: var(--paper);
+}
+
+.description {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  line-height: 1.6;
+  color: var(--ash);
+  max-width: 700px;
+  margin-top: 2rem;
+}
+
+.flowWrapper {
+  width: 100%;
+  position: relative;
+  background: radial-gradient(circle at 50% 50%, rgba(181, 137, 42, 0.05) 0%, transparent 70%);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.flowContainer {
+  width: 100%;
+}
+
+/* CUSTOM NODE STYLES */
+.node {
+  background: rgba(9, 8, 10, 0.85);
+  border: 1px solid rgba(181, 137, 42, 0.2);
+  padding: 1.5rem 2rem;
+  min-width: 200px;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.node:hover {
+  border-color: var(--gold);
+  box-shadow: 0 0 30px rgba(181, 137, 42, 0.1);
+}
+
+.nodeActive {
+  border-color: var(--gold);
+  background: rgba(181, 137, 42, 0.05);
+}
+
+.nodeStep {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.nodeTitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  color: var(--paper);
+  letter-spacing: 0.02em;
+  margin-bottom: 0.4rem;
+}
+
+.nodeSub {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--ash);
+  line-height: 1.4;
+}
+
+/* EXPANDED SUB-MODULES */
+.subModules {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(181, 137, 42, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.subModule {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--ash);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: color 0.3s;
+}
+
+.subModule::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: var(--gold);
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.subModule:hover {
+  color: var(--gold);
+}
+
+/* PRINCIPLES SECTION (SYSTEM MANIFESTO) */
+.principles {
+  padding: 10rem 4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.principlesHeader {
+  max-width: 600px;
+}
+
+.principlesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
+}
+
+.principleItem {
+  position: relative;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(181, 137, 42, 0.2);
+}
+
+.principleNumber {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--gold);
+  opacity: 0.6;
+}
+
+.principleTitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  color: var(--paper);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+  transform: skewX(-5deg);
+}
+
+.principleText {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--ash);
+  line-height: 1.5;
+}
+
+/* WORKFLOW SECTION (ENGINEERING PARTNERS) */
+.tools {
+  padding: 10rem 4rem;
+  position: relative;
+}
+
+.toolsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.05);
+  margin-top: 6rem;
+}
+
+.toolCard {
+  background: var(--ink);
+  padding: 4rem;
+  transition: all 0.5s var(--easing);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 350px;
+}
+
+.toolCard:hover {
+  background: rgba(181, 137, 42, 0.03);
+}
+
+.toolCard:hover .principleTitle {
+  color: var(--gold);
+}
+
+.toolIcon {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--gold);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.toolIcon::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(181, 137, 42, 0.2);
+}
+
+@media (max-width: 900px) {
+  .header, .principles, .tools {
+    padding: 4rem 1.5rem;
+  }
+  .principles {
+    grid-template-columns: 1fr;
+  }
+  .toolsGrid {
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+  }
+  .toolCard {
+    padding: 2.5rem 1.5rem;
+    min-height: unset;
+  }
+}
+
+.loading3D {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  text-transform: uppercase;
+  z-index: 5;
+  background: var(--ink);
+}
+
+.overlayText {
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.55rem;
+  letter-spacing: 0.3em;
+  color: rgba(240, 234, 224, 0.4);
+  z-index: 10;
+  pointer-events: none;
+  text-transform: uppercase;
+}
+
+.ctaSection {
+  padding: 15rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background: var(--ink);
+  overflow: hidden;
+}
+
+.ctaWatermark {
+  position: absolute;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30vw;
+  color: rgba(255, 255, 255, 0.02);
+  line-height: 1;
+  pointer-events: none;
+  z-index: 0;
+  white-space: nowrap;
+}
+
+.ctaContent {
+  position: relative;
+  z-index: 1;
+}
+
+.ctaEyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.5em;
+  color: var(--gold);
+  margin-bottom: 3rem;
+  display: block;
+}
+
+.ctaTitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(4rem, 12vw, 10rem);
+  line-height: 0.85;
+  color: var(--paper);
+  margin-bottom: 4rem;
+  letter-spacing: -0.02em;
+}
+
+.ctaButton {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--paper);
+  padding: 1.5rem 4rem;
+  text-decoration: none;
+  transition: all 0.4s var(--easing);
+  display: inline-block;
+  border: 1px solid var(--paper);
+}
+
+.ctaButton:hover {
+  background: transparent;
+  color: var(--paper);
+  border-color: var(--paper);
+  transform: scale(1.05);
+}

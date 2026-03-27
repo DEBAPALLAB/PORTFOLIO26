@@ -1,0 +1,59 @@
+/* filename: components/ScrollIndicator.module.css */
+.wrapper {
+  position: fixed;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.track {
+  width: 1px;
+  height: 120px;
+  background: var(--rule2);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--gold);
+  height: 100%;
+  transform-origin: top;
+  transition: transform 0.1s linear;
+  pointer-events: none;
+}
+
+.dots {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--rule2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dotActive {
+  background: var(--gold);
+  transform: scale(1.5);
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    display: none;
+  }
+}

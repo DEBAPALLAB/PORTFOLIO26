@@ -1,0 +1,23 @@
+/* filename: components/Cursor.module.css */
+.canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 99997;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.crosshair {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  pointer-events: none;
+  will-change: transform;
+}
+
+@media (max-width: 900px) {
+  .canvas, .crosshair {
+    display: none;
+  }
+}

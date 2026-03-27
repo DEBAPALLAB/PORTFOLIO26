@@ -1,0 +1,65 @@
+/* filename: app/not-found.module.css */
+.main {
+  height: 100svh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--paper);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.ghost {
+  font-family: 'Bebas Neue', cursive;
+  font-size: clamp(12rem, 28vw, 22rem);
+  color: rgba(9, 8, 10, 0.06);
+  position: absolute;
+  z-index: 0;
+  user-select: none;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.eyebrow {
+  font-size: 0.62rem;
+  letter-spacing: 0.3em;
+  color: var(--ash);
+}
+
+.text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.italic {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.backLink {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  margin-top: 2rem;
+  transition: color 0.3s ease;
+}
+
+.backLink:hover {
+  color: var(--ink);
+}
+@media (max-width: 900px) {
+  .ghost { font-size: 10rem; }
+  .content { padding: 0 1.5rem; }
+}

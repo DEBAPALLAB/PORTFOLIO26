@@ -1,0 +1,349 @@
+/* filename: app/work/[slug]/page.module.css */
+.main {
+  width: 100%;
+}
+
+.header {
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule2);
+  padding: 10rem 4rem 4rem;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.62rem;
+  letter-spacing: 0.25em;
+  color: var(--ash);
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: clamp(5rem, 14vw, 13rem);
+  line-height: 0.83;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+  color: var(--gold);
+  margin-bottom: 4rem;
+  max-width: 800px;
+}
+
+.headerMeta {
+  display: flex;
+  gap: 6rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--rule);
+}
+
+.metaCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+}
+
+.value {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.15rem;
+  color: var(--ink);
+}
+
+.tagWrap {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.52rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--rule2);
+  color: var(--ash);
+}
+
+.heroPanel {
+  background: var(--ink);
+  min-height: 55vh;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.visualGhost {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 22rem;
+  color: rgba(240, 234, 224, 0.015);
+}
+
+.visualCorner {
+  position: absolute;
+  top: 3rem;
+  left: 4rem;
+  width: 40px;
+  height: 40px;
+  border-top: 1px solid var(--gold2);
+  border-left: 1px solid var(--gold2);
+  opacity: 0.3;
+}
+
+.visualLabel {
+  position: absolute;
+  bottom: 3rem;
+  right: 4rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.55rem;
+  color: rgba(240, 234, 224, 0.3);
+  letter-spacing: 0.15em;
+}
+
+.overviewRole {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 8rem 4rem;
+  gap: 6rem;
+  border-bottom: 1px solid var(--rule2);
+}
+
+.bodyPara {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--ash);
+  margin-top: 1.5rem;
+}
+
+.bodyParaDim {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--ash);
+  opacity: 0.7;
+  margin-top: 1.5rem;
+}
+
+.rolePrimary {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: var(--ink);
+  margin-top: 1.5rem;
+}
+
+.challengeSection {
+  background: var(--cream);
+  padding: 8rem 4rem;
+  border-bottom: 1px solid var(--rule2);
+}
+
+.sectionTitle {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 5rem;
+  line-height: 0.9;
+  color: var(--ink);
+}
+
+.italicSubline {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: var(--gold);
+}
+
+.contentInset {
+  max-width: 720px;
+  margin-left: 20%;
+  margin-top: 4rem;
+}
+
+.bodyParaLarge {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: var(--ash);
+  margin-bottom: 2rem;
+}
+
+.solutionSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 8rem 4rem;
+  gap: 6rem;
+  border-bottom: 1px solid var(--rule2);
+}
+
+.solutionRight {
+  max-width: 600px;
+}
+
+.darkSection {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 8rem 4rem;
+}
+
+.stackHeader {
+  margin-bottom: 4rem;
+}
+
+.darkTitle {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 4rem;
+  color: var(--paper);
+  margin-top: 1rem;
+}
+
+.stackGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.stackCell {
+  background: var(--ink);
+  padding: 3rem;
+}
+
+.catTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: var(--gold2);
+  margin-bottom: 1.5rem;
+}
+
+.pillWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.pill {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.52rem;
+  color: rgba(240, 234, 224, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 0.3rem 0.6rem;
+}
+
+.outcomeSection {
+  padding: 8rem 4rem;
+}
+
+.outcomeContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  margin-top: 6rem;
+}
+
+.outcomeParas {
+  max-width: 600px;
+}
+
+.metricGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.metric {
+  padding: 2rem;
+  background: var(--cream);
+}
+
+.metricNum {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3.5rem;
+  color: var(--gold);
+  display: block;
+}
+
+.metricLabel {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.55rem;
+  letter-spacing: 0.1em;
+  color: var(--ash);
+}
+
+.ctaSection {
+  padding: 8rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid var(--rule2);
+  background: var(--paper);
+}
+
+.ctaEyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.4em;
+  color: var(--gold);
+  margin-bottom: 2rem;
+}
+
+.ctaTitle {
+  font-family: 'Bebas Neue', cursive;
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 0.9;
+  color: var(--ink);
+  margin-bottom: 3rem;
+}
+
+.ctaButton {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--ink);
+  padding: 1.2rem 2.8rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+@media (max-width: 900px) {
+  .header { padding: 8rem 1.5rem 3rem; }
+  .headerMeta { flex-direction: column; gap: 2rem; }
+  .heroPanel { min-height: 40vh; }
+  .visualGhost { font-size: 10rem; }
+  .overviewRole, .solutionSection, .outcomeContent { 
+    grid-template-columns: 1fr; 
+    padding: 4rem 1.5rem;
+    gap: 3rem;
+  }
+  .contentInset { margin-left: 0; }
+  .stackGrid { grid-template-columns: 1fr; }
+  .stackCell { padding: 2rem 1.5rem; }
+  .metricGrid { grid-template-columns: 1fr; }
+  .metric { padding: 1.5rem; }
+  .challengeSection { padding: 4rem 1.5rem; }
+  .darkSection { padding: 4rem 1.5rem; }
+  .outcomeSection { padding: 4rem 1.5rem; }
+}

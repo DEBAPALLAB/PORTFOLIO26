@@ -1,0 +1,102 @@
+/* filename: app/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Mono:ital,wght@0,300;1,300&display=swap');
+
+:root {
+  --ink: #09080A; 
+  --paper: #EFE9DF; 
+  --cream: #E5DDD0;
+  --gold: #B5892A; 
+  --gold2: #D4AC56;
+  --ash: #68605A; 
+  --rule: rgba(9, 8, 10, 0.10); 
+  --rule2: rgba(9, 8, 10, 0.26);
+  --easing: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9990;
+  opacity: 0.65;
+}
+
+/* Base Styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utilities */
+.mono { font-family: 'DM Mono', monospace; font-weight: 300; }
+.bebas { font-family: 'Bebas Neue', sans-serif; }
+.italic { font-style: italic; }
+
+/* Reveal System */
+.rv {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.85s ease, transform 0.85s ease;
+}
+
+.rv.in {
+  opacity: 1;
+  transform: none;
+}
+
+.rv.d1 { transition-delay: 0.1s; }
+.rv.d2 { transition-delay: 0.22s; }
+.rv.d3 { transition-delay: 0.34s; }
+.rv.d4 { transition-delay: 0.46s; }
+.rv.d5 { transition-delay: 0.58s; }
+
+/* Animations */
+@keyframes su {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes fi {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pp {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.65); }
+}
+
+@keyframes mq {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}

@@ -1,0 +1,159 @@
+/* filename: components/Nav.module.css */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 800;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  transition: background 0.5s, border-color 0.5s;
+  border-bottom: 1px solid transparent;
+}
+
+.sc {
+  background: rgba(239, 233, 223, 0.87);
+  backdrop-filter: blur(24px) saturate(160%);
+  border-color: var(--rule2);
+}
+
+.nlogo {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--ash);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.ndot {
+  width: 5px;
+  height: 5px;
+  background: var(--gold);
+  border-radius: 50%;
+  animation: pp 2.5s ease-in-out infinite;
+}
+
+.nlinks {
+  display: flex;
+  gap: 2.8rem;
+  list-style: none;
+}
+
+.nlinks a {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ash);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.25s;
+}
+
+.nlinks a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.nlinks a:hover {
+  color: var(--ink);
+}
+
+.nlinks a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    padding: 1.2rem 1.5rem;
+  }
+  .nlinks {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 900;
+  padding: 0.5rem;
+}
+
+.burger span {
+  width: 22px;
+  height: 1px;
+  background: var(--ash);
+  transition: all 0.3s var(--easing);
+  transform-origin: center;
+}
+
+.burger.active span:nth-child(1) {
+  transform: translateY(3.5px) rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+  transform: translateY(-3.5px) rotate(-45deg);
+}
+
+.mobileMenu {
+  position: fixed;
+  inset: 0;
+  background: var(--paper);
+  z-index: 850;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s var(--easing);
+}
+
+.mobileMenu.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.mobileMenu a {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5rem;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color 0.3s;
+  line-height: 1;
+}
+
+.mobileMenu a:hover {
+  color: var(--gold);
+}
+
+.mobileMeta {
+  margin-top: 4rem;
+  text-align: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  color: var(--ash);
+  text-transform: uppercase;
+}

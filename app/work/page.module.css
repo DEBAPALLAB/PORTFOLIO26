@@ -1,0 +1,185 @@
+/* filename: app/work/page.module.css */
+.container {
+  min-height: 100svh;
+  padding-top: 100px;
+  background: var(--paper);
+}
+
+.work { border-bottom: 1px solid var(--rule2); }
+
+.wkh { padding: 4rem 4rem 3rem; display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px solid var(--rule2); }
+.wkhl { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.38em; color: var(--ash); text-transform: uppercase; display: flex; align-items: center; gap: 0.9rem; }
+.wkhl::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+.wkhr { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 0.9rem; color: var(--ash); }
+
+.pfeat { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--rule2); min-height: 52vh; }
+.pfl { padding: 4rem; display: flex; flex-direction: column; justify-content: space-between; border-right: 1px solid var(--rule2); }
+.pfcat { font-family: 'DM Mono', monospace; font-size: 0.57rem; letter-spacing: 0.28em; color: var(--ash); text-transform: uppercase; display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem; }
+.pfcat::before { content: '01'; color: var(--gold); }
+
+.pft { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3rem, 6.5vw, 5.5rem); line-height: 0.87; letter-spacing: 0.02em; color: var(--ink); }
+.pfsu { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 1.05rem; color: var(--gold); letter-spacing: 0.1em; margin-top: 0.5rem; margin-bottom: 1.8rem; }
+.pfd { font-size: 0.92rem; line-height: 1.8; color: var(--ash); font-weight: 300; max-width: 400px; margin-bottom: 2rem; }
+
+.ptags { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 2rem; }
+.ptag { font-family: 'DM Mono', monospace; font-size: 0.52rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ash); padding: 0.28rem 0.75rem; border: 1px solid var(--rule2); }
+
+.pfcta { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--ink); text-decoration: none; display: flex; align-items: center; gap: 0.8rem; border-top: 1px solid var(--rule2); padding-top: 1.5rem; width: fit-content; transition: all 0.3s; }
+.pfcta:hover { color: var(--gold); gap: 1.4rem; }
+
+.pfr { background: rgba(9, 8, 10, 0.97); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+.pfrbg { font-family: 'Bebas Neue', sans-serif; font-size: 14rem; color: rgba(240, 234, 224, 0.022); letter-spacing: 0.1em; user-select: none; }
+.pfrl { position: absolute; bottom: 1.2rem; right: 1.5rem; font-family: 'DM Mono', monospace; font-size: 0.52rem; letter-spacing: 0.28em; color: rgba(240, 234, 224, 0.16); text-transform: uppercase; }
+.pfrc { position: absolute; top: 10px; left: 10px; width: 16px; height: 16px; border-top: 1px solid var(--gold); border-left: 1px solid var(--gold); opacity: 0.4; }
+
+.psrow { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--rule2); }
+
+.ps { padding: 3.5rem 4rem; border-right: 1px solid var(--rule2); position: relative; overflow: hidden; transition: background 0.3s; }
+.ps:last-child { border-right: none; }
+.ps:nth-child(even) { border-right: none; }
+.ps:hover { background: rgba(9, 8, 10, 0.02); }
+.ps::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1); }
+.ps:hover::before { transform: scaleX(1); }
+
+.psn { font-family: 'DM Mono', monospace; font-size: 0.52rem; letter-spacing: 0.28em; color: var(--gold); margin-bottom: 1.8rem; opacity: 0.62; }
+.pst { font-family: 'Bebas Neue', sans-serif; font-size: 2.8rem; line-height: 0.9; color: var(--ink); display: block; text-decoration: none;}
+.pssub { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 0.9rem; color: var(--gold); margin: 0.4rem 0 1rem; }
+.psd { font-size: 0.86rem; line-height: 1.75; color: var(--ash); font-weight: 300; margin-bottom: 1.2rem; }
+.pscs { font-family: 'DM Mono', monospace; font-size: 0.52rem; letter-spacing: 0.22em; color: var(--gold); text-transform: uppercase; opacity: 0.45; border-top: 1px solid var(--rule); padding-top: 1rem; display: block; text-decoration: none; }
+.pscsLink {
+  opacity: 1;
+  color: var(--ink);
+  transition: all 0.3s ease;
+}
+.pscsLink:hover {
+  color: var(--gold);
+}
+
+.hackathons {
+  padding: 6rem 4rem;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.hwTitleRow {
+  margin-bottom: 4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 1.5rem;
+}
+
+.hwEy {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--gold2);
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+.hwEy::before {
+  content: ''; display: block; width: 24px; height: 1px; background: var(--gold2);
+}
+
+.htq {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3rem, 6.5vw, 5rem);
+  line-height: 0.87;
+  letter-spacing: 0.02em;
+  color: var(--paper);
+  margin-top: 1rem;
+}
+
+.hackGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.hackCard {
+  background: var(--ink);
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hcPlace {
+  font-family: 'DM Mono', monospace; font-size: 0.52rem; letter-spacing: 0.28em; color: var(--gold); margin-bottom: 1.8rem; text-transform: uppercase;
+}
+
+.hcTitle {
+  font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; line-height: 0.9; color: var(--paper); text-transform: uppercase; margin-bottom: 0.5rem;
+}
+
+.hcEvent {
+  font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 1.05rem; color: var(--gold2); letter-spacing: 0.1em;
+}
+
+.hcWork {
+  font-size: 0.86rem; line-height: 1.75; color: rgba(240, 234, 224, 0.6); font-weight: 300; margin-top: 1.5rem; margin-bottom: 1.5rem;
+}
+
+.hcTeam {
+  font-family: 'DM Mono', monospace; font-size: 0.52rem; letter-spacing: 0.1em; color: var(--ash);
+  line-height: 1.5;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 1.5rem;
+}
+
+.ctaSection {
+  padding: 8rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid var(--rule2);
+  background: var(--paper);
+}
+
+.ctaEyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.4em;
+  color: var(--gold);
+  margin-bottom: 2rem;
+}
+
+.ctaTitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 0.9;
+  color: var(--ink);
+  margin-bottom: 3rem;
+}
+
+.ctaButton {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--ink);
+  padding: 1.2rem 2.8rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+@media (max-width: 900px) {
+  .wkh { padding: 3rem 1.5rem; flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+  .pfeat { grid-template-columns: 1fr; }
+  .pfl { padding: 3rem 1.5rem; border-right: none; border-bottom: 1px solid var(--rule2); }
+  .pfr { min-height: 220px; }
+  .psrow { grid-template-columns: 1fr; }
+  .ps { border-right: none; border-bottom: 1px solid var(--rule2); padding: 3rem 1.5rem; }
+  
+  .hackGrid { grid-template-columns: 1fr; }
+  .hwTitleRow, .hackathons { padding: 4rem 1.5rem; }
+  .hackCard { padding: 2.5rem 1.5rem; }
+}
